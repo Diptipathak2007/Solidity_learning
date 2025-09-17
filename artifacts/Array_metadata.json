@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_tweet",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
 					}
 				],
-				"name": "createTweet",
+				"name": "addToDynamicArray",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -21,17 +21,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "getAllTweets",
+				"name": "dynamicArray",
 				"outputs": [
 					{
-						"internalType": "string[]",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string[]"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -40,46 +40,30 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "getTweet",
+				"name": "fixedArray",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
+				"inputs": [],
+				"name": "getDynamicArrayLength",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"name": "tweets",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -99,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter.sol": "Twitter"
+			"contracts/Array.sol": "Array"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -113,12 +97,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Twitter.sol": {
-			"keccak256": "0x7f0891f91e32be5fc639849d4b8d8b0d5fd05ffb3f786a7b9fee00ab7ee0c4ff",
+		"contracts/Array.sol": {
+			"keccak256": "0x1617184f2bb04f9f50b86fa144912ee09ba0f6cc16f494e8991d0f5dc43e3ecd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e6a9f01a6540ad49e3fc07a4635dcf7f35da891cd3c57aeb0ec25b453b7fbd5a",
-				"dweb:/ipfs/QmankU3zenQqcEceFYM181jYgfZ1PpKagnrXd4N2USoNMB"
+				"bzz-raw://b05f98005def7ae34f5cfd69d57c1674901921eb61dbd86f81172986bf66ade3",
+				"dweb:/ipfs/QmTt6bHx9CJ9GNM9qqoWrtmBcC3CBSeF7eWBk2NmzGxtQW"
 			]
 		}
 	},
