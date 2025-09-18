@@ -29,9 +29,31 @@
 				"name": "getAllTweets",
 				"outputs": [
 					{
-						"internalType": "string[]",
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Twitter.Tweet[]",
 						"name": "",
-						"type": "string[]"
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -53,9 +75,31 @@
 				"name": "getTweet",
 				"outputs": [
 					{
-						"internalType": "string",
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Twitter.Tweet",
 						"name": "",
-						"type": "string"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -77,9 +121,24 @@
 				"name": "tweets",
 				"outputs": [
 					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
 						"internalType": "string",
-						"name": "",
+						"name": "content",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "likes",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -99,7 +158,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter.sol": "Twitter"
+			"contracts/Twitter_struct.sol": "Twitter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -113,12 +172,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Twitter.sol": {
-			"keccak256": "0x7f0891f91e32be5fc639849d4b8d8b0d5fd05ffb3f786a7b9fee00ab7ee0c4ff",
+		"contracts/Twitter_struct.sol": {
+			"keccak256": "0xc1598dca590f053cee8444d08694348586169db6b826bbb81a3a10454a9b51fa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e6a9f01a6540ad49e3fc07a4635dcf7f35da891cd3c57aeb0ec25b453b7fbd5a",
-				"dweb:/ipfs/QmankU3zenQqcEceFYM181jYgfZ1PpKagnrXd4N2USoNMB"
+				"bzz-raw://4f6f4e828557b8720b09e708e76312fbf262cafc3383f80ecd4c48db5d0a1b2a",
+				"dweb:/ipfs/QmWdnionubiRWBJ24pK2gwQsaVK26ZnnihkBbLuyY2pCkd"
 			]
 		}
 	},
