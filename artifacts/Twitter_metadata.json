@@ -11,6 +11,99 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetauthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetid",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "likecount",
+						"type": "uint256"
+					}
+				],
+				"name": "Likedthetweet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "Tweetcreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "unliker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetauthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetid",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "likecount",
+						"type": "uint256"
+					}
+				],
+				"name": "Unlikedthetweet",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MAX_TWEET_LENGTH",
 				"outputs": [
@@ -248,7 +341,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter_like.sol": "Twitter"
+			"contracts/Twitter_AddEvent.sol": "Twitter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -262,12 +355,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Twitter_like.sol": {
-			"keccak256": "0x8694b740cd809c7a7cc65223d75abeeb0aae6cf08b664714ebe4079a00a988f5",
+		"contracts/Twitter_AddEvent.sol": {
+			"keccak256": "0x17d34845d46655d98964f196d153b59d86e2177aacd692e56485da9395ca483c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://123ac504653d88b2fa17c14806c4d52555cc4af7863f5963f79980578d32d883",
-				"dweb:/ipfs/QmcNFVtvW7YKesfy2U1gFqw3QjQEJ7mBdLjUFa49BdPUXU"
+				"bzz-raw://555a6fa3374d3d6422735a857048904e116d1ee450a273e3d3bfd08169588aac",
+				"dweb:/ipfs/QmYgbSEc369Xk5ugD2kUadp8XZJmgFEc1z6NLo2g5PkTXQ"
 			]
 		}
 	},
